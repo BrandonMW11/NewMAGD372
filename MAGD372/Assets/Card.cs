@@ -8,5 +8,6 @@ public class Card : ScriptableObject
     public string cardName;
     public string description;
     public Sprite art;
+    public bool hasRandomRarity;
     public int rarity;
 }

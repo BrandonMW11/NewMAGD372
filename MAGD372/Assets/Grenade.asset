@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c006b9df96328194da5b4855a58f19d6, type: 3}
-  m_Name: Toothpaste
+  m_Name: Grenade
   m_EditorClassIdentifier: 
-  cardName: Toothpaste
-  description: He poopin
-  art: {fileID: 21300000, guid: 9ec36d4dfa6b2994fa7439a79bd3e346, type: 3}
-  rarity: 5
+  cardName: Grenade
+  description: Very helpful for when someone slightly disagrees with your opinion.
+  art: {fileID: 21300000, guid: 92e67d6cdae76d14993c7f15a67622bc, type: 3}
+  hasRandomRarity: 1
+  rarity: 4

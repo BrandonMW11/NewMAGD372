@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c006b9df96328194da5b4855a58f19d6, type: 3}
-  m_Name: Toothpaste
+  m_Name: Coin
   m_EditorClassIdentifier: 
-  cardName: Toothpaste
-  description: He poopin
-  art: {fileID: 21300000, guid: 9ec36d4dfa6b2994fa7439a79bd3e346, type: 3}
-  rarity: 5
+  cardName: Coin
+  description: Make sure to spend it on games and not something stupid like food
+    or bills.
+  art: {fileID: 21300000, guid: cdd7fd00026550046b4d6d9942693064, type: 3}
+  hasRandomRarity: 1
+  rarity: 1

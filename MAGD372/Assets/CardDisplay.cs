@@ -12,11 +12,29 @@ public class CardDisplay : MonoBehaviour
     public Text rarityText;
     public Image artImage;
 
+    private int rand;
+    private bool randomStatus;
+
     void Start()
+    {
+        DisplayCard();
+    }
+
+    public void DisplayCard() 
     {
         nameText.text = card.name;
         descriptionText.text = card.description;
-        rarityText.text = card.rarity.ToString();
+        randomStatus = card.hasRandomRarity;
         artImage.sprite = card.art;
+
+        if (randomStatus)
+        {
+            rand = Random.Range(1, 6);
+            rarityText.text = rand.ToString();
+        }
+        else
+        {
+            rarityText.text = card.rarity.ToString();
+        }
     }
 }
