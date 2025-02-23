@@ -9,10 +9,11 @@ public class MouseLook : MonoBehaviour
 
     public Transform playerBody;
 
-    void Start()
+    //Doesn't allow teleport button to be clicked
+    /*void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-    }
+    }*/
 
     void Update()
     {
