@@ -7,13 +7,18 @@ public class MouseLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     float xRotation = 0f;
 
+    public bool hasLockState = false; //Make false for event scene
+
     public Transform playerBody;
 
     //Doesn't allow teleport button to be clicked
-    /*void Start()
+    void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-    }*/
+        if (hasLockState)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
 
     void Update()
     {

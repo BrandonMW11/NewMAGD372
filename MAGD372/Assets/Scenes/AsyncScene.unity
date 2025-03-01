@@ -134,13 +134,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPS Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4351890829330431087, guid: 5af0d0e75526ec3449db86d54bc0153f, type: 3}
+      propertyPath: hasLockState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5125177353165627680, guid: 5af0d0e75526ec3449db86d54bc0153f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 591.5551
       objectReference: {fileID: 0}
     - target: {fileID: 5125177353165627680, guid: 5af0d0e75526ec3449db86d54bc0153f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5125177353165627680, guid: 5af0d0e75526ec3449db86d54bc0153f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -262,7 +266,7 @@ Transform:
   m_GameObject: {fileID: 1253798399}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 518, y: 2, z: 490.69}
+  m_LocalPosition: {x: 555.8, y: 2, z: 490.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 1280773737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 596.9417, y: 2, z: 490.69}
+  m_LocalPosition: {x: 596.9, y: 2, z: 490.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -333,6 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position1: {fileID: 1280773738}
   position2: {fileID: 1253798400}
+  waitTime: 0
 --- !u!136 &1323341488
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -415,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 1323341486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 596.94165, y: 2, z: 490.69}
+  m_LocalPosition: {x: 596.9, y: 2, z: 490.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
