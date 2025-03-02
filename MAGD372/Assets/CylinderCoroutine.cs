@@ -22,7 +22,8 @@ public class CylinderCoroutine : MonoBehaviour
             transform.position = pos;
             yield return null;
         }
+        yield return new WaitForSeconds(1.5f);
         Debug.Log("Coroutine done");
-        yield return new WaitForSeconds(1.5f); //Makes this act like void
+        yield return null; //Makes this act like void
     }
 }
