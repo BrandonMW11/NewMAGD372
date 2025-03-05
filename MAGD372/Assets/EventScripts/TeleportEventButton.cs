@@ -17,7 +17,7 @@ public class TeleportEventButton : MonoBehaviour
         EventManager2.OnClicked -= Teleport;
     }
 
-    void Teleport() //Can't work on player becuase of Movement's update
+    void Teleport()
     {
         if (movement != null) 
         {
@@ -26,14 +26,5 @@ public class TeleportEventButton : MonoBehaviour
 
         Vector3 pos = destination.transform.position;
         transform.position = pos;
-
-        /*if (movement != null)
-        {
-            movement.EnableMovement();
-        }
-
-        Vector3 playerPos = transform.position;
-        playerPos.y = Random.Range(10, 50);
-        transform.position = playerPos;*/
     }
 }

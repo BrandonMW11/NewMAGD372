@@ -8,13 +8,22 @@ public class CylinderAsync : MonoBehaviour
     public Transform position1;
     public Transform position2;
 
-    void Start()
+    /*void Start()
     {
         MyAsync();
+    }*/
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            MyAsync();
+        }
     }
 
     public async void MyAsync()
     {
+        transform.position = position1.position;
         while (transform.position.x > position2.position.x)
         {
             Vector3 pos = transform.position;
