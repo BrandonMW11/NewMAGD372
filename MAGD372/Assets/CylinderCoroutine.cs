@@ -17,7 +17,7 @@ public class CylinderCoroutine : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
-            StartCoroutine(MyCoroutine()); ;
+            StartCoroutine(MyCoroutine());
         }
     }
 
