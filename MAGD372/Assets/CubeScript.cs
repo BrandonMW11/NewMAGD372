@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeScript : MonoBehaviour
+public class CubeScript : MonoBehaviour, IPooledObject
 {
     public float upForce = 1f;
     public float sideForce = .1f;
 
-    void Start()
+    public void OnObjectSpawn()
     {
         float xForce = Random.Range(-sideForce, sideForce);
         float yForce = Random.Range(upForce / 2, upForce);
