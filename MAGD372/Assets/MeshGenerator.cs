@@ -13,6 +13,11 @@ public class MeshGenerator : MonoBehaviour
     //Vertex count = (xSize + 1) * (zSize + 1)
     public int xSize = 20;
     public int zSize = 20;
+    public float[] perlinNoiseMultipliers;
+    public int[] splitPoints;
+    public float xScale = 1;
+    public float yScale = 1;
+    public float zScale = 1;
 
     void Start()
     {
@@ -21,6 +26,7 @@ public class MeshGenerator : MonoBehaviour
 
         CreateShape();
         UpdateMesh();
+        transform.localScale = new Vector3 (xScale, yScale, zScale);
     }
 
     void CreateShape() 
@@ -42,12 +48,26 @@ public class MeshGenerator : MonoBehaviour
 
         //Terrain
         vertices = new Vector3[(xSize + 1) * (zSize + 1)];
-
-        for(int i = 0, z = 0; z <= zSize; z++) 
+        int currentNoiseMp = 0;
+        int currentPoint = 0;
+        /*if (splitPoints.Length > 0)
         {
-            for(int x = 0; x <= xSize; x++) 
+            currentPointValue = splitPoints[0];
+        }*/
+
+        for (int i = 0, z = 0; z <= zSize; z++) 
+        {
+            if (splitPoints.Length > 0 && currentPoint < splitPoints.Length)
             {
-                float y = Mathf.PerlinNoise(x * .3f, z * .3f) * 2f;
+                if (z >= splitPoints[currentPoint])
+                {
+                    currentNoiseMp++;
+                    currentPoint++;
+                }
+            }
+            for (int x = 0; x <= xSize; x++) 
+            {
+                float y = Mathf.PerlinNoise(x * .3f, z * .3f) * perlinNoiseMultipliers[currentNoiseMp];
                 vertices[i] = new Vector3(x, y, z);
                 i++;
             }

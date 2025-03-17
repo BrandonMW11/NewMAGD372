@@ -153,6 +153,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2818dfa5b37e5eb4d81ef1fd9f4de316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSize: 20
+  zSize: 20
+  perlinNoiseMultipliers:
+  - 2
+  - 4
+  splitPoints: 0a000000
+  xScale: 1
+  yScale: 1
+  zScale: 1
 --- !u!23 &6956103
 MeshRenderer:
   m_ObjectHideFlags: 0
