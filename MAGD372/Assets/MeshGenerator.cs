@@ -50,10 +50,6 @@ public class MeshGenerator : MonoBehaviour
         vertices = new Vector3[(xSize + 1) * (zSize + 1)];
         int currentNoiseMp = 0;
         int currentPoint = 0;
-        /*if (splitPoints.Length > 0)
-        {
-            currentPointValue = splitPoints[0];
-        }*/
 
         for (int i = 0, z = 0; z <= zSize; z++) 
         {
